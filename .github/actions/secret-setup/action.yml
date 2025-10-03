@@ -1,0 +1,79 @@
+name: Secret Setup
+inputs:
+  local-properties:
+    description: local.properties
+    required: true
+  dev-debug-xcconfig:
+    description: Diary/DevDebug.xcconfig
+    required: true
+  dev-release-xcconfig:
+    description: Diary/DevRelease.xcconfig
+    required: true
+  real-debug-xcconfig:
+    description: Diary/RealDebug.xcconfig
+    required: true
+  real-release-xcconfig:
+    description: Diary/RealRelease.xcconfig
+    required: true
+  dev-google-services-json:
+    description: app/src/dev/google-services.json
+    required: true
+  real-google-services-json:
+    description: app/src/real/google-services.json
+    required: true
+  dev-debug-google-services-info:
+    description: Diary/GoogleServiceInfo/DevDebug.plist
+    required: true
+  real-release-google-services-info:
+    description: Diary/GoogleServiceInfo/RealRelease.plist
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Generate local.properties
+      shell: bash
+      run: |
+        echo "${{ inputs.local-properties }}" > local.properties
+    - name: Generate DevDebug.xcconfig
+      shell: bash
+      run: |
+        echo "${{ inputs.dev-debug-xcconfig }}" > Diary/DevDebug.xcconfig
+    - name: Generate DevRelease.xcconfig
+      shell: bash
+      run: |
+        echo "${{ inputs.dev-release-xcconfig }}" > Diary/DevRelease.xcconfig
+    - name: Generate RealDebug.xcconfig
+      shell: bash
+      run: |
+        echo "${{ inputs.real-debug-xcconfig }}" > Diary/RealDebug.xcconfig
+    - name: Generate RealRelease.xcconfig
+      shell: bash
+      run: |
+        echo "${{ inputs.real-release-xcconfig }}" > Diary/RealRelease.xcconfig
+    - name: Generate Dev google-services.json
+      env:
+        DATA: ${{ inputs.dev-google-services-json }}
+      shell: bash
+      run: |
+        mkdir -p app/src/dev
+        echo $DATA > app/src/dev/google-services.json
+    - name: Generate Real google-services.json
+      env:
+        DATA: ${{ inputs.real-google-services-json }}
+      shell: bash
+      run: |
+        mkdir -p app/src/real
+        echo $DATA > app/src/real/google-services.json
+    - name: Generate DevDebug GoogleService-Info
+      shell: bash
+      run: |
+        mkdir -p Diary/GoogleServiceInfo
+        echo "${{ inputs.dev-debug-google-services-info }}" > Diary/GoogleServiceInfo/DevDebug.plist
+    - name: Generate RealRelease GoogleService-Info
+      shell: bash
+      run: |
+        mkdir -p Diary/GoogleServiceInfo
+        echo "${{ inputs.real-release-google-services-info }}" > Diary/GoogleServiceInfo/RealRelease.plist
+
+

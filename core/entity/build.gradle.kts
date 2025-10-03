@@ -1,0 +1,19 @@
+import com.android.build.api.dsl.androidLibrary
+
+plugins {
+    id("diary.primitive.android.library")
+}
+
+kotlin {
+    androidLibrary {
+        namespace = "${Build.NAMESPACE}.core.entity"
+    }
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                api(libs.kotlinx.datetime)
+            }
+        }
+    }
+}
