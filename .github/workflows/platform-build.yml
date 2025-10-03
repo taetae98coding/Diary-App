@@ -1,0 +1,85 @@
+name: Platform Build
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  android-build:
+    runs-on: diary-runner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Build Android Bundle
+        run: ./gradlew :app:bundleRealRelease --no-build-cache --no-configuration-cache -Pbuildkonfig.flavor=real
+
+  ios-build:
+    runs-on: diary-runner-mac
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Pod Import
+        run: ./gradlew podImport
+
+      - name: Archive xcarchive
+        run: xcodebuild -project Diary/Diary.xcodeproj -scheme Market archive -archivePath Diary/build/Diary.xcarchive -allowProvisioningUpdates
+
+  jvm-build:
+    runs-on: diary-runner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Build JVM Distribution
+        run: ./gradlew :app:packageDistributionForCurrentOS --no-build-cache --no-configuration-cache -Pbuildkonfig.flavor=real

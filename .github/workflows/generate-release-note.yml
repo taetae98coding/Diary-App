@@ -1,0 +1,79 @@
+name: Generate Release Note
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate-release-note:
+    runs-on: diary-runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Update CHANGELOG.md
+        uses: orhun/git-cliff-action@v4
+        with:
+          config: cliff.toml
+          args: -o CHANGELOG.md -t ${{ inputs.tag }}
+
+      - name: Update Module Graph
+        shell: bash
+        run: bash generateModuleGraph.sh
+
+      - name: Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
+          message: ${{ inputs.tag }}
+          tag: ${{ inputs.tag }}
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ inputs.tag }}
+          name: ${{ inputs.tag }}
+          body: |
+            [Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.tag }}/CHANGELOG.md)
+          draft: false
+          prerelease: false
+
+  android:
+    needs: [ generate-release-note ]
+    uses: ./.github/workflows/android-distribution.yml
+    secrets: inherit
+    with:
+      tag: ${{ inputs.tag }}
+
+  ios:
+    needs: [ generate-release-note ]
+    uses: ./.github/workflows/ios-distribution.yml
+    secrets: inherit
+    with:
+      tag: ${{ inputs.tag }}

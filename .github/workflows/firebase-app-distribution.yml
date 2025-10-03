@@ -1,0 +1,13 @@
+name: Firebase App Distribution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  android:
+    uses: ./.github/workflows/android-distribution.yml
+    secrets: inherit
+
+  ios:
+    uses: ./.github/workflows/ios-distribution.yml
+    secrets: inherit

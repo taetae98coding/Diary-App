@@ -1,0 +1,52 @@
+name: Reusable iOS Distribution
+
+on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      tag:
+        required: false
+        type: string
+
+jobs:
+  ios-distribution:
+    runs-on: diary-runner-mac
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Pod Import
+        run: ./gradlew podImport
+
+      - name: Archive xcarchive
+        run: xcodebuild -project Diary/Diary.xcodeproj -scheme Market archive -archivePath Diary/build/Diary.xcarchive -allowProvisioningUpdates
+
+      - name: Export IPA
+        run: xcodebuild -exportArchive -archivePath Diary/build/Diary.xcarchive -exportPath Diary/build -exportOptionsPlist Diary/ExportOptions.plist -allowProvisioningUpdates
+
+      - name: Firebase App Distribution
+        uses: emertozd/Firebase-Distribution-Github-Action@v2
+        with:
+          appId: ${{ secrets.IOS_REAL_RELEASE_FIREBASE_APP_ID }}
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_APP_DISTRIBUTION_KEY }}
+          groups: Developer,Apple
+          file: Diary/build/Apps/Diary.ipa
+          releaseNotesFile: CHANGELOG.md
