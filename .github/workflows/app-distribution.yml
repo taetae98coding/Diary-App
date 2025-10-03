@@ -1,0 +1,125 @@
+name: Firebase App Distribution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  android-build:
+    runs-on: diary-runner
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+      - name: Build APK
+        run: ./gradlew :app:assembleRealRelease --no-build-cache --no-configuration-cache -Pbuildkonfig.flavor=real
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Diary.apk
+          path: app/build/outputs/apk/real/release/app-real-release.apk
+
+
+  android-distribution:
+    needs: [ android-build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download APK
+        uses: actions/download-artifact@v4
+        with:
+          name: Diary.apk
+
+      - name: Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.ANDROID_REAL_RELEASE_FIREBASE_APP_ID }}
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_APP_DISTRIBUTION_KEY }}
+          groups: Developer,Android
+          file: app-real-release.apk
+          releaseNotesFile: CHANGELOG.md
+
+      - name: Delete APK
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: Diary.apk
+
+  ios-build:
+    runs-on: diary-runner-mac
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Setup
+        uses: ./.github/actions/build-setup
+
+      - name: Secret Setup
+        uses: ./.github/actions/secret-setup
+        with:
+          local-properties: ${{ secrets.LOCAL_PROPERTIES }}
+          dev-debug-xcconfig: ${{ secrets.DEV_DEBUG_XCCONFIG }}
+          dev-release-xcconfig: ${{ secrets.DEV_RELEASE_XCCONFIG }}
+          real-debug-xcconfig: ${{ secrets.REAL_DEBUG_XCCONFIG }}
+          real-release-xcconfig: ${{ secrets.REAL_RELEASE_XCCONFIG }}
+          dev-google-services-json: ${{ secrets.DEV_GOOGLE_SERVICES_JSON }}
+          real-google-services-json: ${{ secrets.REAL_GOOGLE_SERVICES_JSON }}
+          dev-debug-google-services-info: ${{ secrets.DEV_DEBUG_GOOGLE_SERVICES_INFO }}
+          real-release-google-services-info: ${{ secrets.REAL_RELEASE_GOOGLE_SERVICES_INFO }}
+
+      - name: Pod Import
+        run: ./gradlew podImport
+
+      - name: Archive xcarchive
+        run: xcodebuild -project Diary/Diary.xcodeproj -scheme Market archive -archivePath Diary/build/Diary.xcarchive -allowProvisioningUpdates
+
+      - name: Export IPA
+        run: xcodebuild -exportArchive -archivePath Diary/build/Diary.xcarchive -exportPath Diary/build -exportOptionsPlist Diary/ExportOptions.plist -allowProvisioningUpdates
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Diary.ipa
+          path: Diary/build/Apps/Diary.ipa
+
+  ios-distribution:
+    needs: [ ios-build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download IPA
+        uses: actions/download-artifact@v4
+        with:
+          name: Diary.ipa
+
+      - name: Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.IOS_REAL_RELEASE_FIREBASE_APP_ID }}
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_APP_DISTRIBUTION_KEY }}
+          groups: Developer,Apple
+          file: Diary.ipa
+          releaseNotesFile: CHANGELOG.md
+
+      - name: Delete IPA
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: Diary.ipa
