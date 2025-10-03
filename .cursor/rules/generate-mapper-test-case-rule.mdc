@@ -1,0 +1,60 @@
+---
+description: Mapper TC 작성할 때 참고한다.
+alwaysApply: false
+---
+# 객체 생성
+객체 생성은 FixtureMonkey 사용한다.
+
+# TC 형식
+TC 형식은 Kotest의 FunSpec으로 작성한다.
+```kotlin
+class MapperTest : FunSpec() {
+    init {
+        val fixture = FixtureMonkey.builder()
+            .plugin(KotlinPlugin())
+            .build()
+
+        test("Entity to Local") {
+            val entity  = fixture.giveMeOne<Entity>()
+            val local = entity.toLocal()
+
+            // 필드가 맞게 잘 들어갔는지 확인
+            local.title shouldBe entity.title
+
+            // 역변환 확인
+            entity shouldBe local.toEntity()
+        }
+
+        // 조건 분기 필요하면 작성
+        test("Entity to Local {TC 이유}") {
+            val entity = fixture.giveMeKotlinBuilder<MemoDetail>()
+                .set(Entity::title, null)
+                .sample()
+            val local = entity.toLocal()
+
+            // 필드가 맞게 잘 들어갔는지 확인
+            local.title shouldBe entity.title
+
+            // 역변환 확인
+            entity shouldBe local.toEntity()
+        }
+    }
+}
+```
+
+kotest의 검증 함수를 사용할 때 infix 형식을 적극 사용한다.
+```kotlin
+Entity.title shouldBe LocalEntity.title
+```
+
+# TC 내용
+## 필드 매핑 확인
+model 변환 시 사용하는 필드 전부 잘 mapping되는지 확인한다.
+
+Entity와 LocalEntity 동일한 필드가 있을 때 잘 전달됐는지 확인한다.
+예를들어 Entity.title LocalEntity.title이 존재하는 경우 Entity.title == LocalEntity.title 성립해야한다.
+
+## 역변환 확인
+model을 다시 원래 타입으로 변환할 때 잘 mapping되는지 확인한다.
+예를들어 Entity를 LocalEntity로 변경했으면 LocalEntity를 Entity로 변경했을 때 기존과 동일해야한다.
+

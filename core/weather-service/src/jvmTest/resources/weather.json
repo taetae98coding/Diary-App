@@ -1,0 +1,45 @@
+{
+  "coord": {
+    "lon": 126.9125,
+    "lat": 37.5214
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "맑음",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 29.99,
+    "feels_like": 36.99,
+    "temp_min": 29.99,
+    "temp_max": 33.01,
+    "pressure": 1000,
+    "humidity": 79,
+    "sea_level": 1000,
+    "grnd_level": 993
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.57,
+    "deg": 300
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1753788423,
+  "sys": {
+    "type": 1,
+    "id": 8105,
+    "country": "KR",
+    "sunrise": 1753734813,
+    "sunset": 1753785834
+  },
+  "timezone": 32400,
+  "id": 1837055,
+  "name": "Yongsan",
+  "cod": 200
+}
