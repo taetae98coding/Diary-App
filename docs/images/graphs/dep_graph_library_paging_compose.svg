@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212pt" height="116pt" viewBox="0 0 212 116">
+    <g class="graph" transform="translate(4 112)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-116h212.04V4z"/>
+        <g class="node">
+            <title>:library:paging-compose</title>
+            <ellipse cx="102.02" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="102.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-compose</text>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="102.02" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="102.02" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:library:paging-compose-&gt;:library:paging-common</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M102.02-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m105.52-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

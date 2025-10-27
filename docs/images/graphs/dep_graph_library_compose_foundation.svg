@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242pt" height="44pt" viewBox="0 0 242 44">
+    <g class="graph" transform="translate(4 40)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-44h241.73V4z"/>
+        <g class="node">
+            <title>:library:compose-foundation</title>
+            <ellipse cx="116.86" cy="-18" fill="none" stroke="#000" rx="116.86" ry="18"/>
+            <text xml:space="preserve" x="116.86" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-foundation</text>
+        </g>
+    </g>
+</svg>

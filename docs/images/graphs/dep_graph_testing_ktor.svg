@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="116pt" viewBox="0 0 159 116">
+    <g class="graph" transform="translate(4 112)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-116h158.81V4z"/>
+        <g class="node">
+            <title>:testing:ktor</title>
+            <ellipse cx="75.41" cy="-90" fill="none" stroke="#000" rx="55.45" ry="18"/>
+            <text xml:space="preserve" x="75.41" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:testing:ktor</text>
+        </g>
+        <g class="node">
+            <title>:testing:resources</title>
+            <ellipse cx="75.41" cy="-18" fill="none" stroke="#000" rx="75.41" ry="18"/>
+            <text xml:space="preserve" x="75.41" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:testing:resources</text>
+        </g>
+        <g class="edge">
+            <title>:testing:ktor-&gt;:testing:resources</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M75.41-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m78.91-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260pt" viewBox="0 0 195 260">
+    <g class="graph" transform="translate(4 256)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-260h194.64V4z"/>
+        <g class="node">
+            <title>:core:preferences</title>
+            <ellipse cx="93.32" cy="-234" fill="none" stroke="#000" rx="74.38" ry="18"/>
+            <text xml:space="preserve" x="93.32" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:preferences</text>
+        </g>
+        <g class="node">
+            <title>:core:datastore</title>
+            <ellipse cx="93.32" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="93.32" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:datastore</text>
+        </g>
+        <g class="edge">
+            <title>:core:preferences-&gt;:core:datastore</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M93.32-215.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m96.82-193.13-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:koin-datastore</title>
+            <ellipse cx="93.32" cy="-90" fill="none" stroke="#000" rx="93.32" ry="18"/>
+            <text xml:space="preserve" x="93.32" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:koin-datastore</text>
+        </g>
+        <g class="edge">
+            <title>:core:datastore-&gt;:library:koin-datastore</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M93.32-143.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m96.82-121.13-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-file</title>
+            <ellipse cx="93.32" cy="-18" fill="none" stroke="#000" rx="82.06" ry="18"/>
+            <text xml:space="preserve" x="93.32" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-file</text>
+        </g>
+        <g class="edge">
+            <title>:library:koin-datastore-&gt;:library:kotlinx-file</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M93.32-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m96.82-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

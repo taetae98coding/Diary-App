@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632pt" height="332pt" viewBox="0 0 632 332">
+    <g class="graph" transform="translate(4 328)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-332h632.21V4z"/>
+        <g class="node">
+            <title>:domain:buddy-group</title>
+            <ellipse cx="410.02" cy="-306" fill="none" stroke="#000" rx="91.78" ry="18"/>
+            <text xml:space="preserve" x="410.02" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:buddy-group</text>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="547.02" cy="-18" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="547.02" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M488.2-296.3c31.32 7.21 65.44 20.36 88.82 44.3 56.48 57.82 57.96 105.76 26 180-5.06 11.77-14.17 22.14-23.58 30.52"/>
+            <path stroke="#000" d="m581.92-38.99-9.94 3.67 5.48-9.06z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="102.02" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="102.02" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M349.35-292.09c-31.22 8.38-68.98 21.3-99.33 40.09-76.69 47.48-106.3 61.61-143 144-8.43 18.93-9.41 42.4-8.43 60.49"/>
+            <path stroke="#000" d="m102.07-47.99-2.7 10.24-4.28-9.69z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="349.02" cy="-18" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="349.02" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M342.65-293.44c-24.88 7.67-51.03 20.38-67.63 41.44-49.56 62.9-35.19 112.56 8 180 7.23 11.29 17.7 21.27 28.17 29.44"/>
+            <path stroke="#000" d="m313.1-45.5 5.99 8.74-10.13-3.1z"/>
+        </g>
+        <g class="node">
+            <title>:domain:account</title>
+            <ellipse cx="431.02" cy="-90" fill="none" stroke="#000" rx="72.85" ry="18"/>
+            <text xml:space="preserve" x="431.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:account</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:domain:account</title>
+            <path fill="none" stroke="#000" d="M486.92-295.79c27.01 7.36 54.68 20.47 71.1 43.79 36.34 51.61-38.56 108.95-88.06 139.33"/>
+            <path stroke="#000" d="m471.82-109.7-10.38 2.14 6.78-8.14z"/>
+        </g>
+        <g class="node">
+            <title>:domain:memo</title>
+            <ellipse cx="481.02" cy="-234" fill="none" stroke="#000" rx="68.24" ry="18"/>
+            <text xml:space="preserve" x="481.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:memo</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:domain:memo</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M427.21-288.05c8.63 8.51 19.26 18.98 28.78 28.37"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m457.17-263.43 4.67 9.52-9.58-4.53z"/>
+        </g>
+        <g class="node">
+            <title>:domain:tag</title>
+            <ellipse cx="339.02" cy="-234" fill="none" stroke="#000" rx="55.45" ry="18"/>
+            <text xml:space="preserve" x="339.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:tag</text>
+        </g>
+        <g class="edge">
+            <title>:domain:buddy-group-&gt;:domain:tag</title>
+            <path fill="none" stroke="#000" d="M392.83-288.05c-8.76 8.63-19.57 19.29-29.19 28.78"/>
+            <path stroke="#000" d="m366.22-256.9-9.58 4.53 4.66-9.51z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:core:entity</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M457.63-72.94c16.11 9.72 36.83 22.22 54.27 32.75"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m512.38-43.99 6.75 8.16L508.76-38z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M377.06-77.52C322.4-65.89 237.44-47.81 176.41-34.83"/>
+            <path stroke="#000" d="m177.29-31.44-10.51-1.34 9.05-5.5z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M411.59-72.41c-10.09 8.61-22.62 19.31-33.81 28.86"/>
+            <path stroke="#000" d="m380.2-41.01-9.88 3.83 5.33-9.16z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:memo-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M522.78-219.41c18.99 8.36 39.92 21.05 52.24 39.41 26.83 40 23.45 62.05 9 108-3.05 9.69-8.57 19.16-14.43 27.35"/>
+            <path stroke="#000" d="m572.48-42.67-8.88 5.79 3.33-10.06z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:memo-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M430.6-221.47C373.63-208.24 286.97-187.4 273.02-180c-64.14 34.05-121.79 98.64-150.94 134.8"/>
+            <path stroke="#000" d="m124.86-43.07-8.96 5.66 3.47-10.01z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:memo-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M492.21-215.89c19.09 31.56 52.92 99.76 20.81 143.89-13.47 18.5-33.52 30.68-55.03 38.66"/>
+            <path stroke="#000" d="m459.36-30.11-10.59-.12 8.35-6.51z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:memo-&gt;:domain:account</title>
+            <path fill="none" stroke="#000" d="M474.89-215.59c-8.52 24.19-24.02 68.23-34.13 96.94"/>
+            <path stroke="#000" d="m444.17-117.81-6.62 8.27.02-10.59z"/>
+        </g>
+        <g class="node">
+            <title>:domain:sync</title>
+            <ellipse cx="343.02" cy="-162" fill="none" stroke="#000" rx="61.08" ry="18"/>
+            <text xml:space="preserve" x="343.02" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:sync</text>
+        </g>
+        <g class="edge">
+            <title>:domain:memo-&gt;:domain:sync</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M450.39-217.46c-19.92 10.1-46.11 23.39-67.63 34.3"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m385.82-180.78-10.51 1.4 7.34-7.65z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:tag-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M370.6-218.87c39.46 19.31 106.18 57.7 142.42 110.87 12.67 18.59 21.47 42.54 26.94 60.92"/>
+            <path stroke="#000" d="m543.28-48.22-.67 10.57-6.07-8.69z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:tag-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M285.47-229.08c-38.19 5.45-88.43 18.4-121.45 49.08-38.05 35.35-53 96.68-58.68 132.57"/>
+            <path stroke="#000" d="m108.84-47.2-4.88 9.4-2.05-10.4z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:tag-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M310.42-218.15c-14.04 8.98-29.58 21.85-37.4 38.15-6.92 14.43-3.68 20.43 0 36 8.96 37.97 34.53 75.38 53.55 99.23"/>
+            <path stroke="#000" d="m329.16-47.14 3.63 9.95-9.05-5.52z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:tag-&gt;:domain:account</title>
+            <path fill="none" stroke="#000" d="M368.89-218.6c15.5 8.99 33.4 22.02 44.13 38.6 11.59 17.91 15.96 41.76 17.5 60.27"/>
+            <path stroke="#000" d="m434-120.16-2.92 10.18-4.07-9.78z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:tag-&gt;:domain:sync</title>
+            <path fill="none" stroke="#000" d="M340.01-215.7c.42 7.29.91 15.97 1.38 24.16"/>
+            <path stroke="#000" d="m344.88-191.8-2.92 10.18-4.07-9.78z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M338.79-143.8c-3.73 19.67-6.32 51.73 10.23 71.8 39.78 48.24 75.63 19.73 136 36 3.5.94 7.12 1.92 10.75 2.91"/>
+            <path stroke="#000" d="m496.49-36.52 8.73 6.01-10.57.74z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M316.56-145.4c-30.14 17.77-80.89 47.68-124.54 73.4l-52.04 30.65"/>
+            <path stroke="#000" d="m142.09-38.53-10.39 2.06 6.84-8.09z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M331.83-144.14c-5.97 10.04-12.72 23.29-15.81 36.14-3.73 15.56-4.4 20.62 0 36 2.67 9.34 7.51 18.63 12.68 26.76"/>
+            <path stroke="#000" d="m331.43-47.44 2.75 10.23-8.53-6.28z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:domain:account</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M363.43-144.76c11.28 8.97 25.49 20.27 37.97 30.2"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m402.09-118.48 5.65 8.96-10-3.48z"/>
+        </g>
+    </g>
+</svg>

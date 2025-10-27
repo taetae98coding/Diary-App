@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1576" height="260pt" viewBox="0 0 1182 260">
+    <g class="graph" transform="translate(4 256)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-260h1181.55V4z"/>
+        <g class="node">
+            <title>:feature:search</title>
+            <ellipse cx="594.88" cy="-234" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="594.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:search</text>
+        </g>
+        <g class="node">
+            <title>:compose:core</title>
+            <ellipse cx="311.88" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:core</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:compose:core</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M547.51-221.28c-48.67 12.03-124.53 30.8-176.96 43.77"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m372.89-174.49-10.55-.99 8.87-5.8z"/>
+        </g>
+        <g class="node">
+            <title>:core:logger</title>
+            <ellipse cx="450.88" cy="-162" fill="none" stroke="#000" rx="55.45" ry="18"/>
+            <text xml:space="preserve" x="450.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:logger</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:core:logger</title>
+            <path fill="none" stroke="#000" d="M563.63-217.81c-21.37 10.39-49.9 24.26-72.9 35.44"/>
+            <path stroke="#000" d="m492.47-179.33-10.52 1.23 7.46-7.52z"/>
+        </g>
+        <g class="node">
+            <title>:core:navigation</title>
+            <ellipse cx="594.88" cy="-162" fill="none" stroke="#000" rx="70.8" ry="18"/>
+            <text xml:space="preserve" x="594.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:navigation</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:core:navigation</title>
+            <path fill="none" stroke="#000" d="M594.88-215.7v24.16"/>
+            <path stroke="#000" d="m598.38-191.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="810.88" cy="-162" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="810.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M636.02-219.67c32.53 10.54 78.4 25.41 115 37.27"/>
+            <path stroke="#000" d="m751.69-185.86 8.44 6.41-10.6.25z"/>
+        </g>
+        <g class="node">
+            <title>:library:lifecycle-common</title>
+            <ellipse cx="1064.88" cy="-162" fill="none" stroke="#000" rx="108.67" ry="18"/>
+            <text xml:space="preserve" x="1064.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:lifecycle-common</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:library:lifecycle-common</title>
+            <path fill="none" stroke="#000" d="M651.1-224.63c80.08 11.93 227.84 33.94 323.4 48.17"/>
+            <path stroke="#000" d="m975.01-179.92 9.38 4.93-10.41 1.99z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-color</title>
+            <ellipse cx="95.88" cy="-90" fill="none" stroke="#000" rx="95.88" ry="18"/>
+            <text xml:space="preserve" x="95.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-color</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="M270.74-147.67c-33.31 10.8-80.61 26.13-117.62 38.12"/>
+            <path stroke="#000" d="m154.52-106.32-10.59-.25 8.43-6.41z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-datetime</title>
+            <ellipse cx="311.88" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-datetime</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M311.88-143.7v24.16"/>
+            <path stroke="#000" d="m315.38-119.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-compose</title>
+            <ellipse cx="533.88" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="533.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-compose</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:paging-compose</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M353.64-147.83c34.18 10.77 82.94 26.15 121.13 38.19"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m474.38-113.43 8.48 6.34-10.59.33z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="533.88" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="533.88" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:library:paging-compose-&gt;:library:paging-common</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M533.88-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m537.38-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

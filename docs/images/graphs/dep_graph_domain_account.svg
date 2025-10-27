@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608pt" height="116pt" viewBox="0 0 608 116">
+    <g class="graph" transform="translate(4 112)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-116h607.99V4z"/>
+        <g class="node">
+            <title>:domain:account</title>
+            <ellipse cx="225.89" cy="-90" fill="none" stroke="#000" rx="72.85" ry="18"/>
+            <text xml:space="preserve" x="225.89" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:account</text>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="52.89" cy="-18" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="52.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:core:entity</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M189.2-74.15c-27.09 10.96-64.06 25.92-92.67 37.49"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m99.4-34.05-10.58.51 7.96-6.99z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="225.89" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="225.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M225.89-71.7v24.16"/>
+            <path stroke="#000" d="m229.39-47.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="472.89" cy="-18" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="472.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M272.64-75.75c37.87 10.73 91.7 25.99 134.01 37.98"/>
+            <path stroke="#000" d="m407.58-41.15 8.66 6.1-10.57.64z"/>
+        </g>
+    </g>
+</svg>

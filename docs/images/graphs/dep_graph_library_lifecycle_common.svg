@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="44pt" viewBox="0 0 225 44">
+    <g class="graph" transform="translate(4 40)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-44h225.35V4z"/>
+        <g class="node">
+            <title>:library:lifecycle-common</title>
+            <ellipse cx="108.67" cy="-18" fill="none" stroke="#000" rx="108.67" ry="18"/>
+            <text xml:space="preserve" x="108.67" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:lifecycle-common</text>
+        </g>
+    </g>
+</svg>

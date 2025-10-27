@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2508" height="332pt" viewBox="0 0 1881 332">
+    <g class="graph" transform="translate(4 328)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-332h1880.89V4z"/>
+        <g class="node">
+            <title>:feature:login</title>
+            <ellipse cx="1072.88" cy="-306" fill="none" stroke="#000" rx="60.56" ry="18"/>
+            <text xml:space="preserve" x="1072.88" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:login</text>
+        </g>
+        <g class="node">
+            <title>:compose:core</title>
+            <ellipse cx="376.88" cy="-234" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="376.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:core</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:compose:core</title>
+            <path fill="none" stroke="#000" d="M1016.22-299.3c-125.96 12.67-428.98 43.14-567.75 57.1"/>
+            <path stroke="#000" d="m448.97-238.73-10.3-2.48 9.6-4.49z"/>
+        </g>
+        <g class="node">
+            <title>:core:logger</title>
+            <ellipse cx="1114.88" cy="-234" fill="none" stroke="#000" rx="55.45" ry="18"/>
+            <text xml:space="preserve" x="1114.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:logger</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:core:logger</title>
+            <path fill="none" stroke="#000" d="M1083.05-288.05c4.79 7.99 10.63 17.72 15.99 26.65"/>
+            <path stroke="#000" d="m1101.88-263.46 2.15 10.37-8.15-6.77z"/>
+        </g>
+        <g class="node">
+            <title>:core:navigation</title>
+            <ellipse cx="1258.88" cy="-234" fill="none" stroke="#000" rx="70.8" ry="18"/>
+            <text xml:space="preserve" x="1258.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:navigation</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:core:navigation</title>
+            <path fill="none" stroke="#000" d="M1109.18-291.34c28.66 10.79 68.93 25.94 100.48 37.82"/>
+            <path stroke="#000" d="m1210.88-256.8 8.13 6.8-10.59-.25z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="955.88" cy="-18" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="955.88" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M1065.72-287.83c-4.32 10.37-9.91 23.85-14.84 35.83-30.44 73.99-65.94 161.36-83.69 205.1"/>
+            <path stroke="#000" d="m970.44-45.61-7 7.95.52-10.59z"/>
+        </g>
+        <g class="node">
+            <title>:library:lifecycle-common</title>
+            <ellipse cx="1455.88" cy="-234" fill="none" stroke="#000" rx="108.67" ry="18"/>
+            <text xml:space="preserve" x="1455.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:lifecycle-common</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:library:lifecycle-common</title>
+            <path fill="none" stroke="#000" d="M1123.34-295.78c63.8 11.66 174.44 31.89 250.46 45.78"/>
+            <path stroke="#000" d="m1374.06-253.51 9.21 5.24-10.47 1.64z"/>
+        </g>
+        <g class="node">
+            <title>:domain:account</title>
+            <ellipse cx="854.88" cy="-90" fill="none" stroke="#000" rx="72.85" ry="18"/>
+            <text xml:space="preserve" x="854.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:account</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:domain:account</title>
+            <path fill="none" stroke="#000" d="M1055.38-288.46c-10.89 10.38-25.13 24.08-37.5 36.46-47.11 47.13-56.07 61.7-104 108-10.04 9.69-21.37 20.01-31.4 28.95"/>
+            <path stroke="#000" d="m885.01-112.61-9.81 4 5.17-9.25z"/>
+        </g>
+        <g class="node">
+            <title>:domain:credentials</title>
+            <ellipse cx="773.88" cy="-234" fill="none" stroke="#000" rx="84.11" ry="18"/>
+            <text xml:space="preserve" x="773.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:credentials</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:domain:credentials</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M1026.49-294.14c-49.9 11.68-129.69 30.36-186.22 43.6"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m842.77-247.53-10.54-1.13 8.94-5.69z"/>
+        </g>
+        <g class="node">
+            <title>:library:google-credentials-compose</title>
+            <ellipse cx="1727.88" cy="-234" fill="none" stroke="#000" rx="145.01" ry="18"/>
+            <text xml:space="preserve" x="1727.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:google-credentials-compose</text>
+        </g>
+        <g class="edge">
+            <title>:feature:login-&gt;:library:google-credentials-compose</title>
+            <path fill="none" stroke="#000" d="M1129.24-299.12c92.74 9.69 283.33 29.68 444.64 47.12 11.98 1.29 24.48 2.66 36.95 4.02"/>
+            <path stroke="#000" d="m1611.2-251.46 9.56 4.57-10.32 2.39z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-color</title>
+            <ellipse cx="95.88" cy="-162" fill="none" stroke="#000" rx="95.88" ry="18"/>
+            <text xml:space="preserve" x="95.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-color</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="M329.53-221.2c-45.61 11.36-115.06 28.66-166.39 41.45"/>
+            <path stroke="#000" d="m164.16-176.4-10.55-.98 8.86-5.82z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-datetime</title>
+            <ellipse cx="311.88" cy="-162" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-datetime</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M361.14-216.05c-7.82 8.42-17.43 18.77-26.08 28.08"/>
+            <path stroke="#000" d="m337.87-185.84-9.37 4.94 4.24-9.71z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-compose</title>
+            <ellipse cx="395.88" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="395.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-compose</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:paging-compose</title>
+            <path fill="none" stroke="#000" d="M396.74-216.55c9.9 9.52 20.85 22.4 26.14 36.55 7.61 20.39-.28 43.98-9.45 61.75"/>
+            <path stroke="#000" d="m416.52-116.6-7.95 7.01 1.84-10.44z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M878.56-72.59c13.01 9.02 29.36 20.35 43.68 30.27"/>
+            <path stroke="#000" d="m923.82-45.48 6.23 8.58-10.21-2.82z"/>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="715.88" cy="-18" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="715.88" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:core:entity</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M823.68-73.29c-20.36 10.25-47.1 23.72-68.85 34.67"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m757.81-36.2-10.51 1.37 7.36-7.62z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="542.88" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="542.88" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:account-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M802.3-77.2c-51.28 11.5-129.71 29.1-186.91 41.93"/>
+            <path stroke="#000" d="m616.25-31.87-10.53-1.23 9-5.6z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:credentials-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M831.05-220.46c27.25 8.12 59.02 20.93 82.83 40.46 29.17 23.93 34.6 35.73 45 72 5.61 19.56 4.66 42.54 2.41 60.24"/>
+            <path stroke="#000" d="m964.76-47.31-4.95 9.36-1.97-10.4z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:credentials-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M703.36-223.95c-26.95 7.28-55.13 20.39-71.48 43.95-31.74 45.72 20.24 104.95 55.57 137.31"/>
+            <path stroke="#000" d="m689.74-45.34 5.14 9.27-9.79-4.04z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:credentials-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M707.1-222.66c-30.18 7.54-64.52 20.5-89.22 42.66-39.7 35.61-59.99 96.59-68.98 132.4"/>
+            <path stroke="#000" d="m552.33-46.89-5.7 8.93-1.11-10.54z"/>
+        </g>
+        <g class="node">
+            <title>:domain:sync</title>
+            <ellipse cx="843.88" cy="-162" fill="none" stroke="#000" rx="61.08" ry="18"/>
+            <text xml:space="preserve" x="843.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:sync</text>
+        </g>
+        <g class="edge">
+            <title>:domain:credentials-&gt;:domain:sync</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M790.82-216.05c8.52 8.51 18.99 18.98 28.38 28.37"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m820.35-191.48 4.6 9.55-9.55-4.6z"/>
+        </g>
+        <g class="node">
+            <title>:domain:push</title>
+            <ellipse cx="702.88" cy="-162" fill="none" stroke="#000" rx="61.59" ry="18"/>
+            <text xml:space="preserve" x="702.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:push</text>
+        </g>
+        <g class="edge">
+            <title>:domain:credentials-&gt;:domain:push</title>
+            <path fill="none" stroke="#000" d="M756.69-216.05c-8.63 8.51-19.26 18.98-28.78 28.37"/>
+            <path stroke="#000" d="m730.56-185.38-9.57 4.53 4.66-9.51z"/>
+        </g>
+        <g class="node">
+            <title>:library:google-credentials</title>
+            <ellipse cx="1727.88" cy="-162" fill="none" stroke="#000" rx="108.67" ry="18"/>
+            <text xml:space="preserve" x="1727.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:google-credentials</text>
+        </g>
+        <g class="edge">
+            <title>:library:google-credentials-compose-&gt;:library:google-credentials</title>
+            <path fill="none" stroke="#000" d="M1727.88-215.7v24.16"/>
+            <path stroke="#000" d="m1731.38-191.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="edge">
+            <title>:library:paging-compose-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M430.34-72.59c20.28 9.66 46.13 21.97 67.95 32.36"/>
+            <path stroke="#000" d="m499.74-43.42 7.52 7.46-10.53-1.14z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M882.64-147.68c19.1 8.49 40.85 21.38 54.24 39.68 12.7 17.36 17.27 41.44 18.76 60.17"/>
+            <path stroke="#000" d="m959.13-48.1-2.98 10.17-4.01-9.8z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:domain:account</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M846.6-143.7c1.16 7.38 2.54 16.18 3.84 24.45"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m853.63-121.52-1.91 10.43-5.01-9.34z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M818.44-145.31c-14.4 9.65-32.15 22.9-45.56 37.31-17.43 18.72-32.78 43.45-43.15 62.09"/>
+            <path stroke="#000" d="m732.92-44.46-7.83 7.13 1.68-10.46z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:sync-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M812.52-146.21c-53.66 25.32-163.26 77.02-224.93 106.12"/>
+            <path stroke="#000" d="m589.3-37.03-10.54 1.1 7.55-7.43z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:push-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M711.89-143.94c11.5 20.14 33.28 53.26 60.99 71.94 26.14 17.62 58.17 29.46 88.09 37.39"/>
+            <path stroke="#000" d="m861.58-38.06 8.84 5.83-10.55.95z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:push-&gt;:domain:account</title>
+            <path fill="none" stroke="#000" d="M734.74-146.33c22.15 10.2 51.94 23.92 76.31 35.15"/>
+            <path stroke="#000" d="m812.48-114.38 7.62 7.36-10.54-1z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:push-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M701.24-143.52c-1.34 18.01-2.56 46.85.64 71.52 1.07 8.24 3.04 17.03 5.17 25.03"/>
+            <path stroke="#000" d="m710.4-47.99-.62 10.57-6.11-8.65z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:push-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M684.21-144.43c-27.95 24.81-80.88 71.78-113.43 100.67"/>
+            <path stroke="#000" d="m573.11-41.15-9.81 4.02 5.16-9.25z"/>
+        </g>
+    </g>
+</svg>

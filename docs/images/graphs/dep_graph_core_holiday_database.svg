@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="382pt" height="188pt" viewBox="0 0 382 188">
+    <g class="graph" transform="translate(4 184)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-188h381.96V4z"/>
+        <g class="node">
+            <title>:core:holiday-database</title>
+            <ellipse cx="179.06" cy="-162" fill="none" stroke="#000" rx="94.34" ry="18"/>
+            <text xml:space="preserve" x="179.06" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:holiday-database</text>
+        </g>
+        <g class="node">
+            <title>:library:koin-room</title>
+            <ellipse cx="82.06" cy="-90" fill="none" stroke="#000" rx="80.01" ry="18"/>
+            <text xml:space="preserve" x="82.06" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:koin-room</text>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-database-&gt;:library:koin-room</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M156.07-144.41c-12.47 9-28.09 20.27-41.76 30.14"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m117.83-112.5-10.16 3.02 6.06-8.69z"/>
+        </g>
+        <g class="node">
+            <title>:library:room-common</title>
+            <ellipse cx="277.06" cy="-90" fill="none" stroke="#000" rx="96.9" ry="18"/>
+            <text xml:space="preserve" x="277.06" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:room-common</text>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-database-&gt;:library:room-common</title>
+            <path fill="none" stroke="#000" d="M202.28-144.41c12.61 9 28.39 20.27 42.2 30.14"/>
+            <path stroke="#000" d="m246.33-117.25 6.1 8.66-10.17-2.97z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-file</title>
+            <ellipse cx="82.06" cy="-18" fill="none" stroke="#000" rx="82.06" ry="18"/>
+            <text xml:space="preserve" x="82.06" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-file</text>
+        </g>
+        <g class="edge">
+            <title>:library:koin-room-&gt;:library:kotlinx-file</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M82.06-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m85.56-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

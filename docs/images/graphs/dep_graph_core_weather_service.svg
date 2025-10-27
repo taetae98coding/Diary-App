@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188pt" height="116pt" viewBox="0 0 188 116">
+    <g class="graph" transform="translate(4 112)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-116h188.5V4z"/>
+        <g class="node">
+            <title>:core:weather-service</title>
+            <ellipse cx="90.25" cy="-90" fill="none" stroke="#000" rx="90.25" ry="18"/>
+            <text xml:space="preserve" x="90.25" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:weather-service</text>
+        </g>
+        <g class="node">
+            <title>:core:ktor-client</title>
+            <ellipse cx="90.25" cy="-18" fill="none" stroke="#000" rx="70.29" ry="18"/>
+            <text xml:space="preserve" x="90.25" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:ktor-client</text>
+        </g>
+        <g class="edge">
+            <title>:core:weather-service-&gt;:core:ktor-client</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M90.25-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m93.75-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

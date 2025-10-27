@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1808pt" height="404pt" viewBox="0 0 1808 404">
+    <g class="graph" transform="translate(4 400)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-404h1808.34V4z"/>
+        <g class="node">
+            <title>:data:location</title>
+            <ellipse cx="922.24" cy="-378" fill="none" stroke="#000" rx="61.08" ry="18"/>
+            <text xml:space="preserve" x="922.24" y="-372.95" font-family="Times,serif" font-size="14" text-anchor="middle">:data:location</text>
+        </g>
+        <g class="node">
+            <title>:core:mapper</title>
+            <ellipse cx="745.24" cy="-306" fill="none" stroke="#000" rx="60.05" ry="18"/>
+            <text xml:space="preserve" x="745.24" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:mapper</text>
+        </g>
+        <g class="edge">
+            <title>:data:location-&gt;:core:mapper</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M886.85-363c-27.5 10.87-65.84 26.04-95.7 37.84"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m793.97-322.51-10.58.42 8.01-6.93z"/>
+        </g>
+        <g class="node">
+            <title>:core:ip-service</title>
+            <ellipse cx="68.24" cy="-234" fill="none" stroke="#000" rx="68.24" ry="18"/>
+            <text xml:space="preserve" x="68.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:ip-service</text>
+        </g>
+        <g class="edge">
+            <title>:data:location-&gt;:core:ip-service</title>
+            <path fill="none" stroke="#000" d="M867.89-369.36C740.96-351.28 415.34-303.5 145.24-252c-5.19.99-10.56 2.07-15.95 3.18"/>
+            <path stroke="#000" d="m130.26-245.44-10.51-1.36 9.06-5.49z"/>
+        </g>
+        <g class="node">
+            <title>:core:location</title>
+            <ellipse cx="1097.24" cy="-306" fill="none" stroke="#000" rx="61.59" ry="18"/>
+            <text xml:space="preserve" x="1097.24" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:location</text>
+        </g>
+        <g class="edge">
+            <title>:data:location-&gt;:core:location</title>
+            <path fill="none" stroke="#000" d="M957.23-363c27.1 10.84 64.85 25.94 94.33 37.73"/>
+            <path stroke="#000" d="m1052.62-328.62 7.98 6.97-10.58-.47z"/>
+        </g>
+        <g class="node">
+            <title>:domain:location</title>
+            <ellipse cx="1339.24" cy="-306" fill="none" stroke="#000" rx="73.87" ry="18"/>
+            <text xml:space="preserve" x="1339.24" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:location</text>
+        </g>
+        <g class="edge">
+            <title>:data:location-&gt;:domain:location</title>
+            <path fill="none" stroke="#000" d="M974.21-368.28c74.21 12.46 210.75 35.38 294.17 49.38"/>
+            <path stroke="#000" d="m1268.76-322.38 9.28 5.11-10.44 1.79z"/>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:ip-service</title>
+            <path fill="none" stroke="#000" d="M686.17-302.32C578.24-296.85 342.13-282.3 145.24-252c-5.52.85-11.24 1.86-16.96 2.96"/>
+            <path stroke="#000" d="m129.33-245.68-10.49-1.45 9.11-5.41z"/>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="1253.24" cy="-234" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="1253.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M803.4-300.88c85.56 6.7 250.09 21.97 387.84 48.88 4.02.78 8.15 1.69 12.29 2.67"/>
+            <path stroke="#000" d="m1204.11-252.79 8.85 5.83-10.55.96z"/>
+        </g>
+        <g class="node">
+            <title>:core:database</title>
+            <ellipse cx="745.24" cy="-234" fill="none" stroke="#000" rx="63.63" ry="18"/>
+            <text xml:space="preserve" x="745.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:database</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:database</title>
+            <path fill="none" stroke="#000" d="M745.24-287.7v24.16"/>
+            <path stroke="#000" d="m748.74-263.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:core:preferences</title>
+            <ellipse cx="1108.24" cy="-234" fill="none" stroke="#000" rx="74.38" ry="18"/>
+            <text xml:space="preserve" x="1108.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:preferences</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:preferences</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M795.42-295.65c55.88 10.45 148.87 27.97 228.82 43.65 5.61 1.1 11.42 2.25 17.25 3.42"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m1040.6-252.33 9.12 5.39-10.5 1.47z"/>
+        </g>
+        <g class="node">
+            <title>:core:service</title>
+            <ellipse cx="212.24" cy="-234" fill="none" stroke="#000" rx="58" ry="18"/>
+            <text xml:space="preserve" x="212.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:service</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:service</title>
+            <path fill="none" stroke="#000" d="M687.12-300.93c-88.55 6.77-262.3 22.31-407.88 48.93-4.39.8-8.92 1.73-13.45 2.73"/>
+            <path stroke="#000" d="m266.59-245.86-10.53-1.15 8.95-5.67z"/>
+        </g>
+        <g class="node">
+            <title>:core:holiday-database</title>
+            <ellipse cx="921.24" cy="-234" fill="none" stroke="#000" rx="94.34" ry="18"/>
+            <text xml:space="preserve" x="921.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:holiday-database</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:holiday-database</title>
+            <path fill="none" stroke="#000" d="M780.43-291c26.09 10.37 62.01 24.66 91.03 36.2"/>
+            <path stroke="#000" d="m872.41-258.19 8 6.95-10.59-.44z"/>
+        </g>
+        <g class="node">
+            <title>:core:holiday-service</title>
+            <ellipse cx="575.24" cy="-234" fill="none" stroke="#000" rx="88.71" ry="18"/>
+            <text xml:space="preserve" x="575.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:holiday-service</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:holiday-service</title>
+            <path fill="none" stroke="#000" d="M710.84-290.83c-25.12 10.34-59.51 24.5-87.37 35.97"/>
+            <path stroke="#000" d="m625.12-251.75-10.58.57 7.91-7.05z"/>
+        </g>
+        <g class="node">
+            <title>:core:weather-service</title>
+            <ellipse cx="378.24" cy="-234" fill="none" stroke="#000" rx="90.25" ry="18"/>
+            <text xml:space="preserve" x="378.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:weather-service</text>
+        </g>
+        <g class="edge">
+            <title>:core:mapper-&gt;:core:weather-service</title>
+            <path fill="none" stroke="#000" d="M695.75-295.56c-62.53 11.93-170.71 32.56-243.19 46.38"/>
+            <path stroke="#000" d="m453.66-245.82-10.48-1.57 9.17-5.31z"/>
+        </g>
+        <g class="node">
+            <title>:core:ktor-client</title>
+            <ellipse cx="295.24" cy="-162" fill="none" stroke="#000" rx="70.29" ry="18"/>
+            <text xml:space="preserve" x="295.24" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:ktor-client</text>
+        </g>
+        <g class="edge">
+            <title>:core:ip-service-&gt;:core:ktor-client</title>
+            <path fill="none" stroke="#000" d="M111.47-219.67c36.69 11.31 89.52 27.61 129.13 39.82"/>
+            <path stroke="#000" d="m241.43-183.26 8.52 6.29-10.59.4z"/>
+        </g>
+        <g class="edge">
+            <title>:core:location-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M1129.94-290.33c23.88 10.72 56.41 25.31 82.06 36.83"/>
+            <path stroke="#000" d="m1213.1-256.85 7.69 7.29-10.55-.9z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M1318.86-288.41c-11.08 9.02-24.97 20.32-37.11 30.2"/>
+            <path stroke="#000" d="m1284.02-255.54-9.96 3.6 5.54-9.03z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="1426.24" cy="-234" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="1426.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M1359.86-288.41c10.89 8.76 24.46 19.68 36.48 29.35"/>
+            <path stroke="#000" d="m1398.39-261.9 5.6 8.99-9.99-3.54z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="1673.24" cy="-234" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="1673.24" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M1394.02-293.52c54.01 11.32 137.17 28.75 198.69 41.64"/>
+            <path stroke="#000" d="m1593.39-255.31 9.07 5.48-10.51 1.37z"/>
+        </g>
+        <g class="node">
+            <title>:library:koin-room</title>
+            <ellipse cx="738.24" cy="-162" fill="none" stroke="#000" rx="80.01" ry="18"/>
+            <text xml:space="preserve" x="738.24" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:koin-room</text>
+        </g>
+        <g class="edge">
+            <title>:core:database-&gt;:library:koin-room</title>
+            <path fill="none" stroke="#000" d="m743.51-215.7-2.42 24.16"/>
+            <path stroke="#000" d="m744.58-191.21-4.48 9.6-2.49-10.3z"/>
+        </g>
+        <g class="node">
+            <title>:library:room-common</title>
+            <ellipse cx="933.24" cy="-162" fill="none" stroke="#000" rx="96.9" ry="18"/>
+            <text xml:space="preserve" x="933.24" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:room-common</text>
+        </g>
+        <g class="edge">
+            <title>:core:database-&gt;:library:room-common</title>
+            <path fill="none" stroke="#000" d="M782.38-219.17c28.05 10.44 66.92 24.91 98.17 36.55"/>
+            <path stroke="#000" d="m881.69-185.93 8.15 6.77-10.59-.21z"/>
+        </g>
+        <g class="node">
+            <title>:core:datastore</title>
+            <ellipse cx="1113.24" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="1113.24" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:datastore</text>
+        </g>
+        <g class="edge">
+            <title>:core:preferences-&gt;:core:datastore</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M1109.48-215.7c.52 7.29 1.14 15.97 1.72 24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m1114.58-193.35-2.78 10.23-4.2-9.73z"/>
+        </g>
+        <g class="edge">
+            <title>:core:service-&gt;:core:ktor-client</title>
+            <path fill="none" stroke="#000" d="M231.49-216.76c10.53 8.88 23.78 20.05 35.47 29.91"/>
+            <path stroke="#000" d="m268.97-189.73 5.39 9.12-9.9-3.77z"/>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-database-&gt;:library:koin-room</title>
+            <path fill="none" stroke="#000" d="M880.63-217.46c-27.27 10.42-63.37 24.23-92.4 35.34"/>
+            <path stroke="#000" d="m789.49-178.86-10.59.31 8.09-6.84z"/>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-database-&gt;:library:room-common</title>
+            <path fill="none" stroke="#000" d="M924.21-215.7c1.26 7.38 2.77 16.18 4.19 24.45"/>
+            <path stroke="#000" d="m931.81-192.04-1.76 10.44-5.14-9.26z"/>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-service-&gt;:core:ktor-client</title>
+            <path fill="none" stroke="#000" d="M520.92-219.42c-47.51 11.88-116.4 29.1-165.56 41.39"/>
+            <path stroke="#000" d="m356.27-174.65-10.55-.97 8.86-5.82z"/>
+        </g>
+        <g class="node">
+            <title>:core:coroutines</title>
+            <ellipse cx="570.24" cy="-162" fill="none" stroke="#000" rx="70.29" ry="18"/>
+            <text xml:space="preserve" x="570.24" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:coroutines</text>
+        </g>
+        <g class="edge">
+            <title>:core:holiday-service-&gt;:core:coroutines</title>
+            <path fill="none" stroke="#000" d="M574.01-215.7c-.53 7.29-1.15 15.97-1.73 24.16"/>
+            <path stroke="#000" d="m575.77-191.34-4.2 9.73-2.78-10.23z"/>
+        </g>
+        <g class="edge">
+            <title>:core:weather-service-&gt;:core:ktor-client</title>
+            <path fill="none" stroke="#000" d="M358.15-216.05c-10.37 8.74-23.2 19.56-34.57 29.15"/>
+            <path stroke="#000" d="m325.92-184.29-9.9 3.77 5.39-9.13z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-file</title>
+            <ellipse cx="925.24" cy="-18" fill="none" stroke="#000" rx="82.06" ry="18"/>
+            <text xml:space="preserve" x="925.24" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-file</text>
+        </g>
+        <g class="edge">
+            <title>:library:koin-room-&gt;:library:kotlinx-file</title>
+            <path fill="none" stroke="#000" d="M760.06-144.43c33.13 25.15 96.26 73.1 134.16 101.87"/>
+            <path stroke="#000" d="m896.22-45.43 5.85 8.83-10.08-3.26z"/>
+        </g>
+        <g class="node">
+            <title>:library:koin-datastore</title>
+            <ellipse cx="1049.24" cy="-90" fill="none" stroke="#000" rx="93.32" ry="18"/>
+            <text xml:space="preserve" x="1049.24" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:koin-datastore</text>
+        </g>
+        <g class="edge">
+            <title>:core:datastore-&gt;:library:koin-datastore</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M1097.75-144.05c-7.63 8.34-16.97 18.56-25.42 27.8"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m1075.96-115.04-9.33 5.02 4.17-9.75z"/>
+        </g>
+        <g class="edge">
+            <title>:library:koin-datastore-&gt;:library:kotlinx-file</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M1020.17-72.59c-16.71 9.44-37.92 21.41-56.05 31.64"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m967.2-38.67-10.43 1.87 6.99-7.96z"/>
+        </g>
+    </g>
+</svg>

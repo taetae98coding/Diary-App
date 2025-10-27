@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2288" height="332pt" viewBox="0 0 1716 332">
+    <g class="graph" transform="translate(4 328)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-332h1715.88V4z"/>
+        <g class="node">
+            <title>:presenter:calendar</title>
+            <ellipse cx="934.02" cy="-306" fill="none" stroke="#000" rx="81.04" ry="18"/>
+            <text xml:space="preserve" x="934.02" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:presenter:calendar</text>
+        </g>
+        <g class="node">
+            <title>:compose:calendar</title>
+            <ellipse cx="365.02" cy="-234" fill="none" stroke="#000" rx="80.52" ry="18"/>
+            <text xml:space="preserve" x="365.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:calendar</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:compose:calendar</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M864.53-296.45c-105.9 13.03-307.19 37.79-419.21 51.57"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m447.46-241.62-10.35-2.25 9.5-4.69z"/>
+        </g>
+        <g class="node">
+            <title>:compose:core</title>
+            <ellipse cx="411.02" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="411.02" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:core</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:compose:core</title>
+            <path fill="none" stroke="#000" d="M855.75-300.93c-73.12 5.57-184.53 18.61-276.73 48.93-49.3 16.21-101.42 46.08-134.29 66.72"/>
+            <path stroke="#000" d="m446.76-182.43-10.31 2.42 6.55-8.32z"/>
+        </g>
+        <g class="node">
+            <title>:core:coroutines</title>
+            <ellipse cx="1070.02" cy="-234" fill="none" stroke="#000" rx="70.29" ry="18"/>
+            <text xml:space="preserve" x="1070.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:coroutines</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:core:coroutines</title>
+            <path fill="none" stroke="#000" d="M965.22-288.94c19.19 9.88 43.97 22.63 64.62 33.26"/>
+            <path stroke="#000" d="m1031.26-258.88 7.29 7.68-10.49-1.46z"/>
+        </g>
+        <g class="node">
+            <title>:core:logger</title>
+            <ellipse cx="1214.02" cy="-234" fill="none" stroke="#000" rx="55.45" ry="18"/>
+            <text xml:space="preserve" x="1214.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:logger</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:core:logger</title>
+            <path fill="none" stroke="#000" d="M987.09-292.14c43.54 10.61 106.78 26.13 161.93 40.14 3.96 1.01 8.06 2.06 12.18 3.12"/>
+            <path stroke="#000" d="m1161.82-252.34 8.8 5.9-10.56.88z"/>
+        </g>
+        <g class="node">
+            <title>:domain:holiday</title>
+            <ellipse cx="985.02" cy="-162" fill="none" stroke="#000" rx="71.82" ry="18"/>
+            <text xml:space="preserve" x="985.02" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:holiday</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:domain:holiday</title>
+            <path fill="none" stroke="#000" d="M937.59-287.6c3.98 18.19 11.12 47.4 20.43 71.6 3.3 8.58 7.57 17.6 11.73 25.71"/>
+            <path stroke="#000" d="m972.78-192.06 1.59 10.48-7.78-7.2z"/>
+        </g>
+        <g class="node">
+            <title>:domain:weather</title>
+            <ellipse cx="783.02" cy="-234" fill="none" stroke="#000" rx="73.36" ry="18"/>
+            <text xml:space="preserve" x="783.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:weather</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:domain:weather</title>
+            <path fill="none" stroke="#000" d="M900.13-289.29c-21.71 10.07-50.11 23.23-73.5 34.07"/>
+            <path stroke="#000" d="m828.19-252.08-10.54 1.03 7.6-7.38z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-ui</title>
+            <ellipse cx="1372.02" cy="-234" fill="none" stroke="#000" rx="84.11" ry="18"/>
+            <text xml:space="preserve" x="1372.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-ui</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:library:compose-ui</title>
+            <path fill="none" stroke="#000" d="M1000.37-295.3c69.34 10.26 181.25 27.16 277.65 43.3 6.68 1.12 13.63 2.31 20.58 3.53"/>
+            <path stroke="#000" d="m1299.14-251.93 9.24 5.19-10.46 1.71z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-foundation</title>
+            <ellipse cx="1591.02" cy="-234" fill="none" stroke="#000" rx="116.86" ry="18"/>
+            <text xml:space="preserve" x="1591.02" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-foundation</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:library:compose-foundation</title>
+            <path fill="none" stroke="#000" d="M1007.98-298.43c102.68 9.3 294.17 27.32 457.04 46.43 9.9 1.16 20.23 2.44 30.53 3.76"/>
+            <path stroke="#000" d="m1495.72-251.74 9.47 4.76-10.37 2.18z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-datetime</title>
+            <ellipse cx="102.02" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="102.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-datetime</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M852.65-305.06c-152.76.95-476.2 8.39-577.63 53.06-67.67 29.8-125.8 97.44-154.29 134.87"/>
+            <path stroke="#000" d="m123.84-115.44-8.79 5.92 3.18-10.11z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="981.02" cy="-90" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="981.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M941.41-287.92c9.19 19.55 26.52 51.49 49.61 71.92 27.69 24.5 55.31 4.71 75 36 8.52 13.54 7.76 22.01 0 36-7.26 13.09-19.25 23.36-31.96 31.24"/>
+            <path stroke="#000" d="m1036-109.84-10.42 1.9 6.97-7.98z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-compose</title>
+            <ellipse cx="534.02" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="534.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-compose</text>
+        </g>
+        <g class="edge">
+            <title>:presenter:calendar-&gt;:library:paging-compose</title>
+            <path fill="none" stroke="#000" d="M859.82-298.48c-47.66 6.62-109.62 19.91-158.8 46.48-63.1 34.09-119.22 98.66-147.54 134.81"/>
+            <path stroke="#000" d="m556.37-115.2-8.88 5.78 3.33-10.06z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:compose:core</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M376.39-215.7c5.18 7.89 11.43 17.4 17.19 26.15"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m395.55-192.91 2.57 10.28-8.42-6.44z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M335.11-216.85c-47.21 25.49-139.07 75.09-192.29 103.82"/>
+            <path stroke="#000" d="m144.51-109.96-10.46 1.67 7.14-7.83z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-color</title>
+            <ellipse cx="318.02" cy="-90" fill="none" stroke="#000" rx="95.88" ry="18"/>
+            <text xml:space="preserve" x="318.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-color</text>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="M354.43-215.89c-5.86 10.12-12.86 23.37-17.41 35.89-7.09 19.55-11.92 42.52-14.93 60.23"/>
+            <path stroke="#000" d="m325.56-119.28-5.03 9.33-1.88-10.43z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M361.72-149.83c-50.56 11.45-129.74 29.39-187.39 42.45"/>
+            <path stroke="#000" d="m175.11-103.97-10.53-1.2 8.98-5.63z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:paging-compose</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M438.62-145.29c16.62 9.45 38.03 21.64 56.36 32.07"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m495.2-117.12 6.96 7.99-10.42-1.9z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="M389.45-144.76c-11.83 8.9-26.72 20.11-39.84 29.98"/>
+            <path stroke="#000" d="m351.75-112.01-10.1 3.22 5.89-8.81z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:holiday-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M984.03-143.7c-.41 7.29-.91 15.97-1.38 24.16"/>
+            <path stroke="#000" d="m986.15-119.4-4.07 9.78-2.92-10.18z"/>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="783.02" cy="-90" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="783.02" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:domain:holiday-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="m944.14-146.83-114.27 39.59"/>
+            <path stroke="#000" d="m831.12-103.96-10.59-.04 8.3-6.58z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="683.02" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="683.02" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:holiday-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M1045.88-152.08c26.49 7.24 55.1 20.35 71.14 44.08 8.96 13.25 10.61 24.02 0 36-21.33 24.1-204.84 39.52-326.31 47.2"/>
+            <path stroke="#000" d="m791.23-21.33-10.2-2.87 9.76-4.12z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M810.82-217.07c16.56 9.93 37.69 23.38 55.2 37.07 18.33 14.32 19.92 21.36 38 36 12.89 10.44 27.76 20.99 40.97 29.9"/>
+            <path stroke="#000" d="m946.62-117.22 6.39 8.45-10.26-2.62z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M744.25-218.39c-16.76 8.48-34.7 21-44.23 38.39-7.69 14.03-7.69 21.97 0 36 8.34 15.23 23.13 26.72 37.94 35.03"/>
+            <path stroke="#000" d="m739.51-112.1 7.27 7.7-10.49-1.49z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M739.6-219.08c-18.54 8.29-38.44 20.84-49.58 39.08-24.91 40.8-19.69 98.85-13.46 132.96"/>
+            <path stroke="#000" d="m679.94-48.02-1.48 10.49-5.39-9.12z"/>
+        </g>
+        <g class="node">
+            <title>:domain:location</title>
+            <ellipse cx="783.02" cy="-162" fill="none" stroke="#000" rx="73.87" ry="18"/>
+            <text xml:space="preserve" x="783.02" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:location</text>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:domain:location</title>
+            <path fill="none" stroke="#000" d="M783.02-215.7v24.16"/>
+            <path stroke="#000" d="m786.52-191.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="edge">
+            <title>:library:paging-compose-&gt;:library:paging-common</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M568.58-72.76c20.63 9.69 47.06 22.11 69.33 32.57"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m637.83-44.1 7.56 7.42-10.54-1.08z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M823.57-146.67c29.17 10.32 68.89 24.36 101.14 35.76"/>
+            <path stroke="#000" d="m925.65-114.29 8.26 6.63-10.6-.03z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M783.02-143.7v24.16"/>
+            <path stroke="#000" d="m786.52-119.62-3.5 10-3.5-10z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M758.86-144.55c-12.57 9.52-27.44 22.4-37.84 36.55-13.53 18.41-23.4 42.38-29.69 60.8"/>
+            <path stroke="#000" d="m694.67-46.15-6.41 8.44-.25-10.6z"/>
+        </g>
+    </g>
+</svg>

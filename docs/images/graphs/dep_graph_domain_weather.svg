@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="608pt" height="188pt" viewBox="0 0 608 188">
+    <g class="graph" transform="translate(4 184)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-188h607.99V4z"/>
+        <g class="node">
+            <title>:domain:weather</title>
+            <ellipse cx="258.89" cy="-162" fill="none" stroke="#000" rx="73.36" ry="18"/>
+            <text xml:space="preserve" x="258.89" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:weather</text>
+        </g>
+        <g class="node">
+            <title>:core:entity</title>
+            <ellipse cx="52.89" cy="-18" fill="none" stroke="#000" rx="52.89" ry="18"/>
+            <text xml:space="preserve" x="52.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core:entity</text>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:core:entity</title>
+            <path fill="none" stroke="#000" d="M209.65-148.22c-26.76 8.53-59.46 21.63-84.76 40.22-23.05 16.93-42.94 42.96-55.94 62.5"/>
+            <path stroke="#000" d="m71.98-43.74-8.36 6.51 2.48-10.3z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="225.89" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="225.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M273.03-143.87c13.23 18.22 29.34 47.69 17.86 71.87-5.61 11.8-15.27 21.84-25.45 29.9"/>
+            <path stroke="#000" d="m267.8-39.49-10.14 3.07 6.02-8.72z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-coroutines-core</title>
+            <ellipse cx="472.89" cy="-18" fill="none" stroke="#000" rx="127.1" ry="18"/>
+            <text xml:space="preserve" x="472.89" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-coroutines-core</text>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M283.44-144.71 437.98-42.16"/>
+            <path stroke="#000" d="m439.64-45.26 6.4 8.44-10.27-2.61z"/>
+        </g>
+        <g class="node">
+            <title>:domain:location</title>
+            <ellipse cx="207.89" cy="-90" fill="none" stroke="#000" rx="73.87" ry="18"/>
+            <text xml:space="preserve" x="207.89" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain:location</text>
+        </g>
+        <g class="edge">
+            <title>:domain:weather-&gt;:domain:location</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M246.54-144.05c-5.95 8.16-13.22 18.14-19.84 27.23"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m230.62-116.26-8.72 6.02 3.06-10.14z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:core:entity</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M173.87-73.64c-23.47 10.6-54.81 24.75-79.71 36"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m97.24-35.19-10.55.93 7.67-7.31z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:paging-common</title>
+            <path fill="none" stroke="#000" d="M212.34-71.7c1.89 7.38 4.15 16.18 6.28 24.45"/>
+            <path stroke="#000" d="m222.01-48.13-.9 10.56-5.88-8.81z"/>
+        </g>
+        <g class="edge">
+            <title>:domain:location-&gt;:library:kotlinx-coroutines-core</title>
+            <path fill="none" stroke="#000" d="M256.8-76.08c41.17 10.88 100.54 26.56 146.64 38.73"/>
+            <path stroke="#000" d="m404.31-40.73 8.78 5.93-10.56.83z"/>
+        </g>
+    </g>
+</svg>

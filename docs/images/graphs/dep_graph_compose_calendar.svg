@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="644pt" height="260pt" viewBox="0 0 644 260">
+    <g class="graph" transform="translate(4 256)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-260h643.9V4z"/>
+        <g class="node">
+            <title>:compose:calendar</title>
+            <ellipse cx="311.88" cy="-234" fill="none" stroke="#000" rx="80.52" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:calendar</text>
+        </g>
+        <g class="node">
+            <title>:compose:core</title>
+            <ellipse cx="311.88" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:compose:core</text>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:compose:core</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M311.88-215.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m315.38-193.13-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:compose-color</title>
+            <ellipse cx="95.88" cy="-90" fill="none" stroke="#000" rx="95.88" ry="18"/>
+            <text xml:space="preserve" x="95.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:compose-color</text>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="m286.68-216.43-156.07 102.6"/>
+            <path stroke="#000" d="m132.8-111.08-10.28 2.57 6.43-8.42z"/>
+        </g>
+        <g class="node">
+            <title>:library:kotlinx-datetime</title>
+            <ellipse cx="533.88" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="533.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:kotlinx-datetime</text>
+        </g>
+        <g class="edge">
+            <title>:compose:calendar-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M337.34-216.71c39.5 25.26 115.65 73.97 160.69 102.78"/>
+            <path stroke="#000" d="m499.87-116.91 6.54 8.34-10.31-2.44z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:compose-color</title>
+            <path fill="none" stroke="#000" d="M270.74-147.67c-33.31 10.8-80.61 26.13-117.62 38.12"/>
+            <path stroke="#000" d="m154.52-106.32-10.59-.25 8.43-6.41z"/>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:kotlinx-datetime</title>
+            <path fill="none" stroke="#000" d="M353.64-147.83c34.18 10.77 82.94 26.15 121.13 38.19"/>
+            <path stroke="#000" d="m475.82-112.98 8.49 6.35-10.59.33z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-compose</title>
+            <ellipse cx="311.88" cy="-90" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-compose</text>
+        </g>
+        <g class="edge">
+            <title>:compose:core-&gt;:library:paging-compose</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M311.88-143.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m315.38-121.13-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:library:paging-common</title>
+            <ellipse cx="311.88" cy="-18" fill="none" stroke="#000" rx="102.02" ry="18"/>
+            <text xml:space="preserve" x="311.88" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:library:paging-common</text>
+        </g>
+        <g class="edge">
+            <title>:library:paging-compose-&gt;:library:paging-common</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M311.88-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m315.38-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>
