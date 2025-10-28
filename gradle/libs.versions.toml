@@ -98,6 +98,7 @@ koin-annotations-compiler = { group = "io.insert-koin", name = "koin-ksp-compile
 napier = { group = "io.github.aakira", name = "napier", version.ref = "napier" }
 
 ### compose multiplatform
+compose-material3-adaptive = { group = "org.jetbrains.compose.material3.adaptive", name = "adaptive", version.ref = "material3-adaptive" }
 compose-material3-adaptive-navigation = { group = "org.jetbrains.compose.material3.adaptive", name = "adaptive-navigation", version.ref = "material3-adaptive" }
 compose-ui-backhandler = { group = "org.jetbrains.compose.ui", name = "ui-backhandler", version.ref = "compose-multiplatform" }
 

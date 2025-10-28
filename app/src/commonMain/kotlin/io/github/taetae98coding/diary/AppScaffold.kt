@@ -2,7 +2,10 @@ package io.github.taetae98coding.diary
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
+import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
+import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffoldDefaults
+import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteType
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
@@ -13,9 +16,17 @@ internal fun AppScaffold(
     state: AppState,
     modifier: Modifier = Modifier,
 ) {
+    val layoutType = NavigationSuiteScaffoldDefaults.calculateFromAdaptiveInfo(currentWindowAdaptiveInfo())
+
     NavigationSuiteScaffold(
         navigationSuiteItems = {
-            state.topLevelDestination.forEach { destination ->
+            val destination = if (layoutType == NavigationSuiteType.NavigationBar) {
+                state.topLevelDestination.take(5)
+            } else {
+                state.topLevelDestination
+            }
+
+            destination.forEach { destination ->
                 val isSelected = state.currentTopLevelDestination == destination
 
                 item(
@@ -27,6 +38,7 @@ internal fun AppScaffold(
                                 TopLevelDestination.Tag -> state.tagScrollState.requestScrollToTop()
                                 TopLevelDestination.Calendar -> state.calendarScrollState.requestScrollToTop()
                                 TopLevelDestination.BuddyGroup -> state.buddyGroupScrollState.requestScrollToTop()
+                                TopLevelDestination.Dday -> state.ddayScrollState.requestScrollToTop()
                                 else -> Unit
                             }
                         } else {
@@ -39,14 +51,13 @@ internal fun AppScaffold(
                             contentDescription = destination.title,
                         )
                     },
-                    label = {
-                        Text(text = destination.title)
-                    },
+                    label = { Text(text = destination.title) },
                     alwaysShowLabel = false,
                 )
             }
         },
         modifier = modifier,
+        layoutType = layoutType,
         state = state.scaffoldState,
     ) {
         AppNavigation(

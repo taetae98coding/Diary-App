@@ -9,6 +9,7 @@ import io.github.taetae98coding.diary.compose.core.icon.MoreImageVector
 import io.github.taetae98coding.diary.compose.core.icon.TagImageVector
 import io.github.taetae98coding.diary.core.navigation.buddy.BuddyGroupListNavKey
 import io.github.taetae98coding.diary.core.navigation.calendar.CalendarNavKey
+import io.github.taetae98coding.diary.core.navigation.dday.DdayListNavKey
 import io.github.taetae98coding.diary.core.navigation.memo.MemoListNavKey
 import io.github.taetae98coding.diary.core.navigation.more.MoreNavKey
 import io.github.taetae98coding.diary.core.navigation.tag.TagListNavKey
@@ -42,5 +43,11 @@ internal enum class TopLevelDestination(
         imageVector = MoreImageVector,
         title = "더보기",
         navKey = MoreNavKey,
+    ),
+
+    Dday(
+        imageVector = MoreImageVector,
+        title = "디데이",
+        navKey = DdayListNavKey,
     ),
 }

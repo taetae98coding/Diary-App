@@ -110,6 +110,7 @@ include(":domain:weather")
 
 include(":feature:buddy-group")
 include(":feature:calendar")
+include(":feature:dday")
 include(":feature:login")
 include(":feature:memo")
 include(":feature:more")

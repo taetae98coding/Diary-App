@@ -16,6 +16,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.startup.AppInitializer
 import io.github.taetae98coding.diary.initializer.GoogleCredentialInitializer
 import io.github.taetae98coding.diary.initializer.LoggerInitializer
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 internal class DiaryActivity : ComponentActivity() {
@@ -36,7 +37,7 @@ internal class DiaryActivity : ComponentActivity() {
     }
 
     private fun initInitializer() {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.Default) {
             with(AppInitializer.getInstance(this@DiaryActivity)) {
                 initializeComponent(GoogleCredentialInitializer::class.java)
                 initializeComponent(LoggerInitializer::class.java)

@@ -13,6 +13,7 @@ import androidx.navigation3.scene.DialogSceneStrategy
 import androidx.navigation3.ui.NavDisplay
 import io.github.taetae98coding.diary.feature.buddy.group.buddyGroupEntryProvider
 import io.github.taetae98coding.diary.feature.calendar.calendarEntryProvider
+import io.github.taetae98coding.diary.feature.dday.ddayEntryProvider
 import io.github.taetae98coding.diary.feature.login.loginEntryProvider
 import io.github.taetae98coding.diary.feature.memo.memoEntryProvider
 import io.github.taetae98coding.diary.feature.more.moreEntryProvider
@@ -55,6 +56,10 @@ internal fun AppNavigation(
                 scrollState = state.buddyGroupScrollState,
             )
             moreEntryProvider(backStack = state.backStack)
+            ddayEntryProvider(
+                backStack = state.backStack,
+                scrollState = state.ddayScrollState,
+            )
             loginEntryProvider(backStack = state.backStack)
         },
         transitionSpec = platformTransitionSpec(),

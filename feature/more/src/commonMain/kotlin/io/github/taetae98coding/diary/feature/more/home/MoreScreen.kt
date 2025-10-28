@@ -26,7 +26,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.compose.dropUnlessResumed
 import io.github.taetae98coding.diary.compose.core.theme.DiaryTheme
 import io.github.taetae98coding.diary.library.compose.foundation.shortcutFocus
-import kotlin.time.Clock
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
@@ -35,6 +34,7 @@ internal fun MoreScreen(
     navigateToFinishMemo: () -> Unit,
     navigateToFinishTag: () -> Unit,
     navigateToGoldHoliday: () -> Unit,
+    navigateToDday: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: MoreAccountViewModel = koinViewModel(),
 ) {
@@ -48,6 +48,7 @@ internal fun MoreScreen(
         onFinishMemo = dropUnlessResumed { navigateToFinishMemo() },
         onFinishTag = dropUnlessResumed { navigateToFinishTag() },
         onGoldHoliday = dropUnlessResumed { navigateToGoldHoliday() },
+        onDday = dropUnlessResumed { navigateToDday() },
         modifier = modifier.shortcutFocus(focusRequester),
     )
 
@@ -62,6 +63,7 @@ internal fun MoreScreen(
     onFinishMemo: () -> Unit,
     onFinishTag: () -> Unit,
     onGoldHoliday: () -> Unit,
+    onDday: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Scaffold(
@@ -75,6 +77,7 @@ internal fun MoreScreen(
             onFinishMemo = onFinishMemo,
             onFinishTag = onFinishTag,
             onGoldHoliday = onGoldHoliday,
+            onDday = onDday,
             modifier = Modifier.fillMaxSize()
                 .padding(it),
         )
@@ -99,6 +102,7 @@ private fun Content(
     onFinishMemo: () -> Unit,
     onFinishTag: () -> Unit,
     onGoldHoliday: () -> Unit,
+    onDday: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     LazyVerticalGrid(
@@ -137,7 +141,7 @@ private fun Content(
         item {
             DefaultCard(onClick = onGoldHoliday) {
                 Text(
-                    text = "🗓️\n황금연휴 찾기",
+                    text = "😎\n황금연휴 찾기",
                     textAlign = TextAlign.Center,
                     style = DiaryTheme.typography.titleLargeEmphasized,
                 )
@@ -145,9 +149,9 @@ private fun Content(
         }
 
         item {
-            DefaultCard(onClick = { throw Exception("더보기 크래시 발생(${Clock.System.now()})") }) {
+            DefaultCard(onClick = onDday) {
                 Text(
-                    text = "🐞\n크래시 발생",
+                    text = "📅\n디데이",
                     textAlign = TextAlign.Center,
                     style = DiaryTheme.typography.titleLargeEmphasized,
                 )

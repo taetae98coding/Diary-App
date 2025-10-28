@@ -7,6 +7,8 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import io.github.taetae98coding.diary.compose.core.preview.DiaryPreview
+import io.github.taetae98coding.diary.compose.core.theme.DiaryTheme
 
 @Composable
 public fun AccountIcon(
@@ -20,4 +22,12 @@ public fun AccountIcon(
         modifier = modifier,
         tint = tint,
     )
+}
+
+@DiaryPreview
+@Composable
+private fun Preview() {
+    DiaryTheme {
+        AccountIcon()
+    }
 }

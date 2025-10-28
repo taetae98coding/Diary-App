@@ -3,6 +3,7 @@ package io.github.taetae98coding.diary.feature.more
 import androidx.navigation3.runtime.EntryProviderScope
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
+import io.github.taetae98coding.diary.core.navigation.dday.DdayListNavKey
 import io.github.taetae98coding.diary.core.navigation.login.LoginNavKey
 import io.github.taetae98coding.diary.core.navigation.memo.MemoDetailNavKey
 import io.github.taetae98coding.diary.core.navigation.more.FinishedMemoNavKey
@@ -25,6 +26,7 @@ public fun EntryProviderScope<NavKey>.moreEntryProvider(
             navigateToFinishMemo = { backStack.add(FinishedMemoNavKey) },
             navigateToFinishTag = { backStack.add(FinishedTagNavKey) },
             navigateToGoldHoliday = { backStack.add(GoldHolidayNavKey) },
+            navigateToDday = { backStack.add(DdayListNavKey) },
         )
     }
 

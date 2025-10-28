@@ -8,10 +8,6 @@ kotlin {
     }
 
     sourceSets {
-        all {
-            languageSettings.optIn("androidx.paging.ExperimentalPagingApi")
-        }
-
         commonMain {
             dependencies {
                 api(libs.androidx.paging.common)

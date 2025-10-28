@@ -89,6 +89,7 @@ kotlin {
 
                 implementation(projects.feature.buddyGroup)
                 implementation(projects.feature.calendar)
+                implementation(projects.feature.dday)
                 implementation(projects.feature.login)
                 implementation(projects.feature.memo)
                 implementation(projects.feature.more)
@@ -112,6 +113,7 @@ kotlin {
                 implementation(libs.lifecycle.viewmodel.navigation3)
                 implementation(libs.navigation3.ui)
                 implementation(libs.androidx.navigation3.runtime)
+                implementation(libs.compose.material3.adaptive)
 
                 implementation(libs.coil.compose)
                 implementation(libs.coil.ktor)
